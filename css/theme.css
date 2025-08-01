@@ -1,0 +1,85 @@
+:root {
+	--whbackground: #433E56;
+	--whforeground: #F8F8F2;
+	--whhighlight: #716799;
+	--whselection: #8077a8;
+	--whcomment: #B0BeC5;
+	--whkeyword: #c2ffdf;
+	--whother: #C5A3FF;
+	--whstorage: #FFB8D1;
+	--whclass: #FFF352;
+	--whfunction: #CEB1FF;
+	--whdarkgrey: #5e5c6a;
+	--whlightgrey: #e0dfe6;
+}
+
+:root {
+	--page-background-color: var(--whbackground);
+	--page-text-color: var(--whforeground);
+	--page-font-family: lato, system-ui, -apple-system, "Helvetica", "Segoe UI", "Roboto", sans-serif;
+	--page-font-size: 18px;
+	--page-font-weight: 300;
+
+	--avatar-max-size: 256px;
+	--avatar-border-color: var(--whcomment);
+	--avatar-border-radius: 50%;
+
+	--title-font-family: lust-script-display, serif;
+	--title-font-size: 72px;
+	--title-font-weight: 800;
+	--title-text-color: var(--whselection);
+	--tagline-text-color: var(--whcomment);
+	--tagline-margin: -1em;
+
+	--social-icon-size: 24px;
+	--social-icon-color: var(--whcomment);
+	--social-hover-icon-color: var(--whfunction);
+
+	--link-background-color: var(--whhighlight);
+	--link-text-color: var(--whforeground);
+	--link-border-color: var(--whhighlight);
+	--link-hover-background-color: var(--whselection);
+	--link-hover-text-color: var(--link-text-color);
+	--link-hover-border-color: var(--link-border-color);
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--page-background-color: var(--whforeground);
+		--page-text-color: var(--whdarkgrey);
+		--page-font-weight: 400;
+
+		--tagline-text-color: var(--whdarkgrey);
+		--social-icon-color: var(--whdarkgrey);
+		--social-hover-icon-color: var(--whselection);
+
+		--link-background-color: var(--whlightgrey);
+		--link-text-color: var(--whbackground);
+		--link-border-color: var(--whselection);
+		--link-hover-background-color: var(--whselection);
+		--link-hover-text-color: var(--whforeground);
+		--link-hover-border-color: var(--whselection);
+	}
+}
+
+@media (max-width: 800px) {
+	:root {
+		--avatar-max-size: 192px;
+		--title-font-size: 36px;
+		--tagline-margin: 0em;
+	}
+}
+
+.title h1 {
+	color: var(--title-text-color);
+}
+.tagline {
+	margin-top: var(--tagline-margin);
+	color: var(--tagline-text-color);
+}
+.body {
+	margin: 0em 1em 2em;
+}
+.body p {
+	margin: 0.5em;
+}
